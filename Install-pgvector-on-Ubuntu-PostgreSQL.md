@@ -293,7 +293,7 @@ Example using fake/demo names:
 ```sql
 CREATE INDEX demo_items_model_hnsw_idx
 ON demo_items
-USING hnsw ((demo_embedding::halfvec(1536)) halfvec_cosine_ops)
+USING hnsw ((demo_embedding::halfvec(3072)) halfvec_cosine_ops)
 WHERE (demo_model_id = 1 AND demo_embedding IS NOT NULL);
 ```
 
@@ -365,7 +365,7 @@ Fake/demo example:
 DB::statement("
     CREATE INDEX demo_items_model_hnsw_idx
     ON demo_items
-    USING hnsw ((demo_embedding::halfvec(1536)) halfvec_cosine_ops)
+    USING hnsw ((demo_embedding::halfvec(3072)) halfvec_cosine_ops)
     WHERE (demo_model_id = 1 AND demo_embedding IS NOT NULL)
 ");
 ```
