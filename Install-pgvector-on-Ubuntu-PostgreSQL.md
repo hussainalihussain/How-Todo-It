@@ -21,15 +21,15 @@ This guide uses fake placeholder names so you do not accidentally publish your r
 
 Replace these values with your own project values:
 
-| Placeholder | Replace With |
-|---|---|
-| `your_database_name_goes_here` | Your PostgreSQL database name |
-| `your_table_name_goes_here` | Your table name |
-| `your_embedding_column_goes_here` | Your vector/embedding column name |
-| `your_filter_column_goes_here` | Your filter column name, if your index uses `WHERE` |
-| `your_filter_value_goes_here` | Your filter value, if your index uses `WHERE` |
-| `your_index_name_goes_here` | Your custom PostgreSQL index name |
-| `your_vector_dimensions_go_here` | Your vector dimension, for example `1536` or `3072` |
+| Placeholder                       | Replace With                                        |
+| --------------------------------- | --------------------------------------------------- |
+| `your_database_name_goes_here`    | Your PostgreSQL database name                       |
+| `your_table_name_goes_here`       | Your table name                                     |
+| `your_embedding_column_goes_here` | Your vector/embedding column name                   |
+| `your_filter_column_goes_here`    | Your filter column name, if your index uses `WHERE` |
+| `your_filter_value_goes_here`     | Your filter value, if your index uses `WHERE`       |
+| `your_index_name_goes_here`       | Your custom PostgreSQL index name                   |
+| `your_vector_dimensions_go_here`  | Your vector dimension, for example `1536` or `3072` |
 
 Example:
 
@@ -605,26 +605,6 @@ In this setup:
 6. pgvector became version `0.8.x`.
 7. `halfvec` became available.
 8. The HNSW index using `halfvec_cosine_ops` could now work.
-
----
-
-# Safe Public Repo Reminder
-
-If this guide is committed to a public GitHub repository, avoid using real project names.
-
-Use placeholder names like:
-
-```txt
-your_database_name_goes_here
-your_table_name_goes_here
-your_embedding_column_goes_here
-your_filter_column_goes_here
-your_filter_value_goes_here
-your_index_name_goes_here
-your_vector_dimensions_go_here
-```
-
-This makes the guide reusable and prevents accidentally exposing internal project/database structure.
 
 ---
 
